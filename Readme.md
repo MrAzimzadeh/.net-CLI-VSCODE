@@ -26,14 +26,14 @@ Data(DbContext)
 ```c#
 public AppDbContext(DbContextOptions<AppDbContext> options) :base(options) { }
 ```
-Data Json 
+Data json 
 ```Json
   "ConnectionStrings": {
     "DefaultConnection": "Server=;Database=;Trusted_Connection=true;TrustServerCertificate=True;"
   },
 ```
 Sql server ConnectionStrings
-```Program.cs
+```c#
 builder.Services.AddDbContext<AppDbContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 ```
