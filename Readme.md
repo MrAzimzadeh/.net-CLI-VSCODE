@@ -1,4 +1,10 @@
+Create Mvc(Area & SqlLite)
+```bash
+ dotnet new mvc --auth Individual
+```
 Asp.NET AREA
+
+
 
 ```bash 
 dotnet tool install -g dotnet-aspnet-codegenerator
