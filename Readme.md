@@ -1,11 +1,25 @@
-Create Mvc(Area & SqlLite)
+# Create Mvc(Area & SqlLite)
 ```bash
  dotnet new mvc --auth Individual
 ```
-Asp.NET AREA
+# Asp.Net Identity <br/>
+## Only written name
+```bash
+dotnet aspnet-codegenerator identity -dc WebApp.Data.AppDbContext  --files "Accoun
+t.Register;Account.Login;Account.Logout" // 
+```
+## All
+```bash 
+dotnet aspnet-codegenerator identity -dc WebApp.Data.AppDbContext  // all
+```
 
+## Error : The below files exist. Use '--force' to overwrite: Areas/Identity/Pages/Account/Login.cshtml
+```bash 
 
+dotnet aspnet-codegenerator identity -dc WebApp.Data.AppDbContext  --force
+```
 
+# Asp.NET AREA
 ```bash 
 dotnet tool install -g dotnet-aspnet-codegenerator
 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design 
