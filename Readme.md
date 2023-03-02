@@ -1,5 +1,8 @@
 # Create Mvc(Area & SqlLite)
 ```bash
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design 
+```
+```bash
  dotnet new mvc --auth Individual
 ```
 # Asp.Net Identity <br/>
@@ -21,7 +24,7 @@ dotnet aspnet-codegenerator identity -dc WebApp.Data.AppDbContext  --force
 
 # Asp.NET AREA
 ```bash 
-dotnet tool install -g dotnet-aspnet-codegenerator
+
 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design 
 
 dotnet-aspnet-codegenerator area Admin
